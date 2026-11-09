@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TuanAI-GovTech | Hệ Sinh Thái Website & AI Agent</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at top right, #1e293b, #0f172a);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; }
+    header {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: rgba(30, 41, 59, 0.75);
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      margin-bottom: 2.5rem;
+      backdrop-filter: blur(12px);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+    h1 { font-size: 2.4rem; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+    p.subtitle { color: var(--muted); max-width: 680px; margin: 0 auto 1.5rem; font-size: 1.05rem; }
+    .btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.4rem;
+      border-radius: 0.65rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .btn-primary { background: var(--accent); color: #0f172a; }
+    .btn-primary:hover { background: var(--accent-hover); color: #fff; transform: translateY(-2px); }
+    .btn-outline { border: 1px solid var(--border); color: var(--text); background: rgba(15, 23, 42, 0.5); }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    h2.section-title { font-size: 1.4rem; margin: 2rem 0 1.2rem; display: flex; align-items: center; gap: 0.5rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+    .card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff; }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .card-footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .card-footer a:hover { text-decoration: underline; }
+    .status {
+      font-size: 0.78rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(34, 197, 94, 0.15);
+      color: #4ade80;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">⚡ Quản Trị Tự Động Bởi Antigravity AI</span>
+      <h1>TuanAI-GovTech Portal</h1>
+      <p class="subtitle">
+        Trung tâm điều hành, xuất bản và liên kết trực tiếp toàn bộ hệ thống Website, Ứng dụng GovTech và Kho kỹ năng AI Agent của <strong>TuanAI-GovTech</strong>.
+      </p>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="https://github.com/TuanAI-GovTech" target="_blank">🏠 GitHub TuanAI-GovTech</a>
+        <a class="btn btn-outline" href="https://github.com/TuanAI-GovTech/agent-skills" target="_blank">🧠 Kho 25 Agent Skills</a>
+        <a class="btn btn-outline" href="https://github.com/TuanAI-GovTech?tab=repositories" target="_blank">📦 Quản Lý Repositories</a>
+      </div>
+    </header>
+
+    <h2 class="section-title">🚀 Danh Mục Website & Dự Án Trực Tuyến</h2>
+    <div class="grid" id="websites-grid">
+      <div class="card">
+        <div>
+          <h3>🌐 TuanAI-GovTech Portal (Trang Chủ)</h3>
+          <p>Cổng thông tin trung tâm tổng hợp đường dẫn tới tất cả các chuyên trang và dự án web được xuất bản trên GitHub Pages.</p>
+        </div>
+        <div class="card-footer">
+          <span class="status">● Sẵn sàng</span>
+          <a href="https://tuanai-govtech.github.io/" target="_blank">Mở Website →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>🧠 Agent Skills (25 Kỹ Năng AI)</h3>
+          <p>Bộ 25 kỹ năng kỹ thuật phần mềm chuẩn Production (Spec, Plan, TDD, Code Review, Security, WebPerf, Ship) đã tích hợp vào Antigravity & Codex.</p>
+        </div>
+        <div class="card-footer">
+          <span class="status">● Đã cài đặt</span>
+          <a href="https://github.com/TuanAI-GovTech/agent-skills" target="_blank">Mở Kho GitHub →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>🏛️ Quản Lý Nhiệm Vụ KH&CN Cấp Tỉnh</h3>
+          <p>Hệ thống kỹ năng và quy trình nghiệp vụ chuyên sâu phục vụ quản lý nhiệm vụ Khoa học & Công nghệ cấp tỉnh theo Thông tư 09/2024.</p>
+        </div>
+        <div class="card-footer">
+          <span class="status">● Đang hoạt động</span>
+          <a href="https://tuanai-govtech.github.io/khcn-cap-tinh/" target="_blank">Mở Chuyên Trang →</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 TuanAI-GovTech — Tự động cập nhật và xuất bản qua GitHub Pages.
+    </footer>
+  </div>
+</body>
+</html>
